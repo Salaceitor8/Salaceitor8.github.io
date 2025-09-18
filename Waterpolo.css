@@ -1,0 +1,534 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+html, body { overflow-x: hidden; }
+
+
+/* Cabecera */
+header {
+    background-color: #004080; /* azul piscina */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Menú de navegación */
+nav {
+    background-color: #0066cc;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    margin: 0 1rem;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Contenido principal */
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Pie de página */
+footer {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Lista de ligas */
+.lista-ligas {
+    list-style: none;
+    padding: 0;
+    margin: 2rem auto;
+    max-width: 400px;
+}
+
+.lista-ligas li {
+    background-color: #0066cc;
+    margin: 1rem 0;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.lista-ligas li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.lista-ligas li:hover {
+    background-color: #004080;
+}
+
+/* Tablas de clasificación */
+.tabla-clasificacion {
+    width: 80%;
+    margin: 2rem auto;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.tabla-clasificacion th {
+    background-color: #004080;
+    color: white;
+    padding: 0.8rem;
+}
+
+.tabla-clasificacion td {
+    padding: 0.6rem;
+    border: 1px solid #ddd;
+}
+
+.tabla-clasificacion tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+/* Títulos de las secciones de ligas */
+main h3 {
+    margin-top: 3rem;
+    color: #004080;
+    text-align: center;
+}
+
+section h3 small {
+    font-size: 0.6em;
+    color: #666;
+    margin-left: 0.5rem;
+}
+
+/* ===== Tabs de Fase (Fase 1 / Fase 2) ===== */
+.tabs-fase { margin: 1rem auto; max-width: 1100px; }
+.tabs-fase input[type="radio"] { position: absolute; left: -9999px; }
+
+.tabs-fase > label {
+  display: inline-block;
+  padding: .6rem 1rem;
+  margin-right: .5rem;
+  border: 1px solid #cfd8e3;
+  border-bottom-width: 3px;
+  border-radius: .6rem .6rem 0 0;
+  background: #fff;
+  cursor: pointer;
+  font-weight: 700;
+  transition: transform .02s ease, border-color .2s ease;
+}
+.tabs-fase > label:hover { transform: translateY(-1px); }
+
+#fase1-masc:checked ~ label[for="fase1-masc"],
+#fase2-masc:checked ~ label[for="fase2-masc"],
+#fase1-fem:checked ~ label[for="fase1-fem"],
+#fase2-fem:checked ~ label[for="fase2-fem"],
+#fase1-masc-seg:checked ~ label[for="fase1-masc-seg"],
+#fase2-masc-seg:checked ~ label[for="fase2-masc-seg"] {
+  border-color: #004080;
+}
+
+.fase-content {
+  display: none;
+  padding: 1rem;
+  border: 1px solid #e5e7eb;
+  border-top: 0;
+  background: #fff;
+  border-radius: 0 .6rem .6rem .6rem;
+}
+
+/* Mostrar el contenido según el tab activo */
+#fase1-masc:checked ~ .fase-content[data-fase="1"],
+#fase2-masc:checked ~ .fase-content[data-fase="2"],
+#fase1-fem:checked  ~ .fase-content[data-fase="1"],
+#fase2-fem:checked  ~ .fase-content[data-fase="2"],
+#fase1-masc-seg:checked ~ .fase-content[data-fase="1"],
+#fase2-masc-seg:checked ~ .fase-content[data-fase="2"] {
+  display: block;
+}
+
+/* ===== Subtabs (Grupo A/B y Título/Permanencia) ===== */
+.subtabs { margin-top: .25rem; }
+.subtabs input[type="radio"] { position: absolute; left: -9999px; }
+
+.subtabs > label {
+  display: inline-block;
+  padding: .4rem .8rem;
+  margin: .25rem .4rem .5rem 0;
+  border: 1px solid #d1d5db;
+  border-radius: .5rem;
+  background: #f9fafb;
+  cursor: pointer;
+  transition: background .2s ease, border-color .2s ease;
+}
+.subtabs > label:hover { background: #f3f4f6; }
+
+#f1-a:checked       ~ label[for="f1-a"],
+#f1-b:checked       ~ label[for="f1-b"],
+#f2-titulo:checked  ~ label[for="f2-titulo"],
+#f2-perma:checked   ~ label[for="f2-perma"],
+#f1a-fem:checked    ~ label[for="f1a-fem"],
+#f1b-fem:checked    ~ label[for="f1b-fem"],
+#f2titulo-fem:checked ~ label[for="f2titulo-fem"],
+#f2perma-fem:checked  ~ label[for="f2perma-fem"],
+#f1-a-seg:checked       ~ label[for="f1-a-seg"],
+#f1-b-seg:checked       ~ label[for="f1-b-seg"],
+#f2-titulo-seg:checked  ~ label[for="f2-titulo-seg"],
+#f2-perma-seg:checked   ~ label[for="f2-perma-seg"] {
+  border-color: #004080;
+  background: #eef2ff;
+  font-weight: 700;
+}
+
+.subtab-panel { display: none; margin-top: .5rem; }
+#f1-a:checked        ~ .subtab-panel[data-sub="f1-a"],
+#f1-b:checked        ~ .subtab-panel[data-sub="f1-b"],
+#f2-titulo:checked   ~ .subtab-panel[data-sub="f2-titulo"],
+#f2-perma:checked    ~ .subtab-panel[data-sub="f2-perma"],
+#f1a-fem:checked     ~ .subtab-panel[data-sub="f1a-fem"],
+#f1b-fem:checked     ~ .subtab-panel[data-sub="f1b-fem"],
+#f2titulo-fem:checked ~ .subtab-panel[data-sub="f2titulo-fem"],
+#f2perma-fem:checked  ~ .subtab-panel[data-sub="f2perma-fem"],
+#f1-a-seg:checked        ~ .subtab-panel[data-sub="f1-a-seg"],
+#f1-b-seg:checked        ~ .subtab-panel[data-sub="f1-b-seg"],
+#f2-titulo-seg:checked   ~ .subtab-panel[data-sub="f2-titulo-seg"],
+#f2-perma-seg:checked    ~ .subtab-panel[data-sub="f2-perma-seg"] { 
+  display: block; 
+}
+
+/* Detalles visuales */
+section h3 small { font-size: .75em; color: #6b7280; margin-left: .5rem; }
+
+/* Si la tabla se desborda en móvil, permite scroll horizontal */
+.subtab-panel { overflow-x: auto; }
+
+/***** =========================
+      Noticias (Inicio)
+============================= */
+:root{
+  --news-bg:#f7f9fc;
+  --news-card:#ffffff;
+  --news-text:#1f2937;
+  --news-muted:#6b7280;
+  --news-accent:#004080;    /* mismo azul base de tu sitio */
+  --news-accent-2:#0ea5e9;  /* acento secundario sutil */
+  --chip-bg:#eef2ff;
+  --chip-border:#c7d2fe;
+  --shadow:0 10px 20px rgba(0,0,0,.06), 0 2px 4px rgba(0,0,0,.04);
+}
+
+#noticias{
+  background: var(--news-bg);
+  padding: 2rem 1rem;
+  border-radius: 1rem;
+}
+
+/* Hero */
+.hero-noticias{
+  text-align: center;
+  margin: 0 auto 1.5rem;
+  max-width: 900px;
+}
+.hero-noticias h2{
+  font-size: clamp(1.4rem, 1.2rem + 1.2vw, 2rem);
+  color: var(--news-text);
+}
+.hero-noticias .hero-sub{
+  color: var(--news-muted);
+  margin:.25rem 0 .25rem;
+}
+.hero-noticias .hero-meta{
+  font-size:.9rem;
+  color: var(--news-muted);
+}
+
+/* Noticia destacada */
+.noticia-destacada{
+  background: var(--news-card);
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  margin: 1rem auto 2rem;
+  max-width: 1100px;
+}
+.noticia-destacada .noticia-link{
+  display: grid;
+  grid-template-columns: 42% 1fr;
+  gap: 1.25rem;
+  text-decoration: none;
+  color: inherit;
+}
+.noticia-media{
+  min-height: 220px;
+  background: linear-gradient(135deg, var(--news-accent), var(--news-accent-2));
+}
+.noticia-contenido{
+  padding: 1rem 1.25rem 1.25rem 0;
+}
+.noticia-destacada h3{
+  margin:.25rem 0 .5rem;
+  line-height:1.2;
+}
+.noticia-entradilla{ color: var(--news-text); opacity:.9; }
+.noticia-meta{ color: var(--news-muted); font-size:.9rem; margin-top:.5rem; }
+
+/* Chips/categorías */
+.noticia-categorias{ display:flex; gap:.5rem; flex-wrap: wrap; }
+.chip{
+  display:inline-block;
+  font-size:.8rem;
+  padding:.2rem .6rem;
+  border-radius:999px;
+  background: var(--chip-bg);
+  border:1px solid var(--chip-border);
+  color: #344;
+}
+.chip-cronica{ background:#ecfeff; border-color:#a5f3fc; }
+.chip-analisis,.chip-tactica{ background:#f0f9ff; border-color:#bae6fd; }
+.chip-historia{ background:#fff7ed; border-color:#fed7aa; }
+.chip-reglas{ background:#f1f5f9; border-color:#cbd5e1; }
+.chip-destacado{ background:#f0fdf4; border-color:#bbf7d0; }
+.chip-nuevo{ background:#fdf2f8; border-color:#fbcfe8; }
+
+/* Grid de tarjetas */
+.noticias-grid{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0,1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.noticia-card{
+  background: var(--news-card);
+  border-radius: .9rem;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform .08s ease, box-shadow .2s ease;
+}
+.noticia-card:hover{ transform: translateY(-2px); }
+.noticia-card .noticia-link{
+  display:block; color:inherit; text-decoration:none;
+}
+.noticia-thumb{
+  height: 140px;
+  background: linear-gradient(135deg, #60a5fa, #a78bfa);
+}
+.noticia-card .noticia-contenido{
+  padding: .9rem 1rem 1rem;
+}
+.noticia-card h4{
+  margin:.35rem 0 .4rem; line-height:1.25;
+}
+.noticia-card .noticia-entradilla{
+  color: var(--news-muted);
+  font-size:.95rem;
+}
+
+/* Módulos fijos: Jugador/a de la semana & Regla explicada */
+.noticias-modulos{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.noticias-modulos section{
+  background: var(--news-card);
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+  padding: 1rem;
+}
+.noticias-modulos header{
+  display:flex; align-items:center; gap:.5rem; margin-bottom:.5rem;
+}
+.mod-contenido{ display:flex; gap:1rem; align-items:flex-start; }
+.jugador-avatar{
+  width:72px; height:72px; border-radius:50%;
+  background: radial-gradient(circle at 30% 30%, #fff, #c7d2fe 60%, #6366f1);
+  flex: 0 0 72px;
+}
+.mini-stats{ margin:.25rem 0; padding-left: 1rem; }
+
+/* Enlace archivo */
+.archivo-noticias{
+  text-align:center; margin-top:1rem;
+}
+.archivo-noticias a{
+  color: var(--news-accent);
+  font-weight:700;
+  text-decoration: underline;
+}
+
+/* Accesibilidad y estados */
+.noticia-link:focus-visible{
+  outline: 3px solid #93c5fd; outline-offset: 2px;
+}
+
+/* Responsive */
+@media (max-width: 960px){
+  .noticia-destacada .noticia-link{
+    grid-template-columns: 1fr;
+  }
+  .noticia-media{ min-height: 180px; }
+  .noticias-grid{
+    grid-template-columns: repeat(2, minmax(0,1fr));
+  }
+  .noticias-modulos{
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 600px){
+  .noticias-grid{
+    grid-template-columns: 1fr;
+  }
+  .hero-noticias{ text-align:left; }
+}
+
+
+/* Imágenes en destacada y tarjetas */
+.noticia-media,
+.noticia-thumb {
+  display:block;
+  overflow:hidden;
+  background:#e5e7eb; /* color de fondo si tarda en cargar */
+}
+
+/* Alturas/encuadre */
+.noticia-media { min-height: 220px; border-radius: 0; }
+.noticia-thumb { height: 140px; }
+
+/* Las imágenes rellenan el contenedor sin deformarse */
+.noticia-media img,
+.noticia-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display:block;
+}
+
+/* Bordes redondeados suaves (opcional) */
+.noticia-destacada { border-radius: 1rem; overflow: hidden; }
+.noticia-card { border-radius: .9rem; overflow: hidden; }
+
+/* Ajustes responsivos ya contemplados arriba; si quieres menos alto en móvil: */
+@media (max-width: 600px){
+  .noticia-media { min-height: 180px; }
+  .noticia-thumb { height: 120px; }
+}
+
+/* ===== Submenú LIGAS solo con HTML+CSS ===== */
+.menu-ligas { position: relative; }
+
+/* Ocultar el checkbox sin provocar overflow lateral */
+.menu-ligas > input {
+  position: absolute; opacity: 0; width: 1px; height: 1px;
+  overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap;
+}
+
+/* El “botón” Ligas se ve como los enlaces del nav */
+.ligas-btn {
+  display: block;
+  padding: 1rem;           /* mismo “alto” que los demás items */
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Submenú cerrado por defecto */
+.submenu{
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(6px); /* centrado bajo "Ligas" */
+  display: flex;
+  flex-wrap: wrap;               /* permite que pasen a 2+ filas */
+  gap: .25rem;
+  padding: .5rem;
+  margin: 0;
+  list-style: none;
+  background: #0066cc;
+  border-radius: .5rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,.12);
+  width: max-content;            /* ancho según contenido… */
+  max-width: calc(100vw - 24px); /* …pero no más que la pantalla */
+  max-height: 60vh;              /* por si hay muchas opciones */
+  overflow-y: auto;              /* scroll vertical dentro si hiciera falta */
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .18s ease, transform .18s ease;
+}
+
+.submenu li a{
+  display: block;
+  padding: .6rem 1rem;
+  color: #fff;
+  text-decoration: none;
+  white-space: nowrap;           /* cada item una línea */
+}
+.submenu li a:hover{ background:#004080; }
+
+/* Mostrar en ESCRITORIO al pasar el ratón */
+.menu-ligas:hover > .submenu{
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Mostrar en MÓVIL/TOUCH al pulsar (checkbox checked) */
+#toggle-ligas:checked ~ .submenu{
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Responsive: si tu nav se apila en móvil, el submenu puede ser estático */
+@media (max-width: 720px){
+  .submenu{
+    position: static;
+    transform: none;
+    width: 100%;
+    max-width: none;
+    box-shadow: none;
+    border-radius: 0;
+    display: none;               /* cerrado por defecto */
+  }
+  #toggle-ligas:checked ~ .submenu{ display: flex; }
+}
+
+/* Alinea verticalmente los items del menú */
+nav ul { display: flex; justify-content: center; align-items: center; }
+
+/* Misma caja para links y para el label de Ligas */
+nav ul li a,
+.ligas-btn {
+  display: block;
+  padding: .75rem 1rem;   /* elige el mismo valor para ambos */
+  line-height: 1;         /* evita que la tipografía empuje hacia abajo */
+}
+
+/* (opcional) si dejas margen en <li>, no pasa nada */
+
+
+
+

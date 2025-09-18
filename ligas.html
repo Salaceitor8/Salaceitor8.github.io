@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ligas - Waterpolo Scores</title>
+    <link rel="stylesheet" href="Waterpolo.css">
+</head>
+<body>
+    <!-- Cabecera -->
+    <header>
+        <h1>Waterpolo Scores</h1>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav>
+        <ul>
+            <li><a href="Waterpolo.html">Inicio</a></li>
+
+            <!-- LIGAS con desplegable -->
+            <li class="menu-ligas">
+            <!-- checkbox oculto para abrir/cerrar en móvil -->
+            <input type="checkbox" id="toggle-ligas" />
+            <label for="toggle-ligas" class="ligas-btn">Ligas ▾</label>
+
+            <ul class="submenu">
+                <li><a href="#division-honor-masculina">División de Honor Masculina</a></li>
+                <li><a href="#division-honor-femenina">División de Honor Femenina</a></li>
+                <li><a href="#primera-nacional-masculina">Primera Nacional Masculina</a></li>
+                <li><a href="#primera-nacional-femenina">Primera Nacional Femenina</a></li>
+                <li><a href="#segunda-nacional-masculina">Segunda Nacional Masculina</a></li>
+            </ul>
+            </li>
+
+            <li><a href="clasificacion.html">Clasificaciones</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main>
+        
+
+        <!-- ===================== -->
+        <!-- Sección: División de Honor Masculina -->
+        <!-- ===================== -->
+        <section id="division-honor-masculina">
+                <h3>División de Honor Masculina (2023-24) <small>Fuente: RFEN</small></h3>
+                <table class="tabla-clasificacion">
+                    <thead>
+                        <tr>
+                            <th>Posición</th>
+                            <th>Equipo</th>
+                            <th>J</th>
+                            <th>G</th>
+                            <th>P</th>
+                            <th>GF</th>
+                            <th>GC</th>
+                            <th>DG</th>
+                            <th>Puntos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>Astralpool C.N. Sabadell</td><td>22</td><td>22</td><td>0</td><td>402</td><td>153</td><td>+249</td><td>66</td></tr>
+                        <tr><td>2</td><td>C.N. Atlètic-Barceloneta</td><td>22</td><td>19</td><td>3</td><td>332</td><td>184</td><td>+148</td><td>58</td></tr>
+                        <tr><td>3</td><td>C.N. Terrasa</td><td>22</td><td>17</td><td>5</td><td>288</td><td>196</td><td>+92</td><td>50</td></tr>
+                        <tr><td>4</td><td>C.N. Barcelona</td><td>22</td><td>15</td><td>7</td><td>206</td><td>190</td><td>+16</td><td>44</td></tr>
+                        <tr><td>5</td><td>C.N. Mataró Quadis</td><td>22</td><td>14</td><td>8</td><td>274</td><td>225</td><td>+49</td><td>41</td></tr>
+                        <tr><td>6</td><td>C.N. Tenerife Echeyde</td><td>22</td><td>9</td><td>13</td><td>201</td><td>246</td><td>-45</td><td>27</td></tr>
+                        <tr><td>7</td><td>C.E. Mediterrani</td><td>22</td><td>7</td><td>15</td><td>199</td><td>258</td><td>-59</td><td>23</td></tr>
+                        <tr><td>8</td><td>C.N. Sant Andreu</td><td>22</td><td>8</td><td>14</td><td>205</td><td>258</td><td>-53</td><td>23</td></tr>
+                        <tr><td>9</td><td>C.N. Catalunya</td><td>22</td><td>7</td><td>15</td><td>207</td><td>259</td><td>-52</td><td>22</td></tr>
+                        <tr><td>10</td><td>Real Canoe N.C</td><td>22</td><td>8</td><td>14</td><td>189</td><td>280</td><td>-91</td><td>22</td></tr>
+                        <tr><td>11</td><td>C.N. Sant Feliu</td><td>22</td><td>5</td><td>17</td><td>160</td><td>289</td><td>-129</td><td>16</td></tr>
+                        <tr><td>12</td><td>C.N. Rubí</td><td>22</td><td>1</td><td>21</td><td>181</td><td>306</td><td>-125</td><td>4</td></tr>
+                    </tbody>
+                </table>
+        </section>
+
+        <section id="division-honor-femenina">
+            <h3>División de Honor Femenina (2023-24) <small>Fuente: RFEN</small> </h3>
+            <table class="tabla-clasificacion">
+                <thead>
+                <tr>
+                    <th>Posición</th>
+                    <th>Equipo</th>
+                    <th>PJ</th>
+                    <th>PG</th>
+                    <th>PP</th>
+                    <th>GF</th>
+                    <th>GC</th>
+                    <th>DG</th>
+                    <th>Puntos</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr><td>1</td><td>C.N. Sant Andreu</td><td>22</td><td>21</td><td>1</td><td>357</td><td>171</td><td>+186</td><td>64</td></tr>
+                <tr><td>2</td><td>Assolim C.N. Mataró</td><td>22</td><td>21</td><td>1</td><td>385</td><td>152</td><td>+233</td><td>62</td></tr>
+                <tr><td>3</td><td>Astralpool C.N. Sabadell</td><td>22</td><td>18</td><td>4</td><td>352</td><td>188</td><td>+164</td><td>54</td></tr>
+                <tr><td>4</td><td>C.N. Terrassa</td><td>22</td><td>15</td><td>7</td><td>302</td><td>216</td><td>+86</td><td>45</td></tr>
+                <tr><td>5</td><td>C.E. Mediterrani</td><td>22</td><td>15</td><td>7</td><td>292</td><td>227</td><td>+65</td><td>44</td></tr>
+                <tr><td>6</td><td>C.N. Catalunya</td><td>22</td><td>11</td><td>11</td><td>238</td><td>280</td><td>-42</td><td>33</td></tr>
+                <tr><td>7</td><td>Santa Cruz Tenerife Echeyde</td><td>22</td><td>9</td><td>13</td><td>219</td><td>267</td><td>-48</td><td>29</td></tr>
+                <tr><td>8</td><td>C.N. Atlètic-Barceloneta</td><td>22</td><td>8</td><td>14</td><td>198</td><td>261</td><td>-63</td><td>23</td></tr>
+                <tr><td>9</td><td>C.N. Sant Feliu</td><td>22</td><td>6</td><td>16</td><td>203</td><td>341</td><td>-138</td><td>16</td></tr>
+                <tr><td>10</td><td>C.N. Rubí</td><td>22</td><td>5</td><td>17</td><td>191</td><td>303</td><td>-112</td><td>15</td></tr>
+                <tr><td>11</td><td>SIMALGA Real Canoe N.C.</td><td>22</td><td>3</td><td>19</td><td>192</td><td>299</td><td>-107</td><td>11</td></tr>
+                <tr><td>12</td><td>C.D. Natación Boadilla</td><td>22</td><td>0</td><td>22</td><td>138</td><td>362</td><td>-224</td><td>0</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+                <!-- ===================== -->
+                <!-- Sección: Primera Nacional Masculina (23/24) -->
+                <!-- ===================== -->
+        <section id="primera-nacional-masculina">
+            <h3>Primera Nacional Masculina (2023-24)
+                <small>Formato: Fase 1 (Grupos A/B) → Fase 2 (Título/Permanencia)</small>
+            </h3>
+
+            <!-- Tabs de Fase (solo CSS; el CSS te lo paso después) -->
+            <div class="tabs-fase">
+                <!-- Radios Fase -->
+                <input type="radio" name="fase-masc" id="fase1-masc" checked>
+                <label for="fase1-masc">Fase 1</label>
+
+                <input type="radio" name="fase-masc" id="fase2-masc">
+                <label for="fase2-masc">Fase 2</label>
+
+                <!-- ===== Contenido FASE 1 ===== -->
+                <div class="fase-content" data-fase="1">
+                    <div class="subtabs">
+                        <input type="radio" name="sub-masc-f1" id="f1-a" checked>
+                        <label for="f1-a">Grupo A</label>
+                        <input type="radio" name="sub-masc-f1" id="f1-b">
+                        <label for="f1-b">Grupo B</label>
+
+                        <!-- GRUPO A -->
+                        <div class="subtab-panel" data-sub="f1-a">
+                            <h4>Fase 1 · Grupo A</h4>
+                            <table class="tabla-clasificacion">
+                                <thead>
+                                    <tr>
+                                        <th>Posición</th>
+                                        <th>Equipo</th>
+                                        <th>J</th>
+                                        <th>G</th>
+                                        <th>P</th>
+                                        <th>GF</th>
+                                        <th>GC</th>
+                                        <th>DG</th>
+                                        <th>Puntos</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>1</td><td>U.E. Horta-Haxelia</td><td>12</td><td>10</td><td>2</td><td>140</td><td>97</td><td>43</td><td>28</td></tr>
+                                    <tr><td>2</td><td>C.D. Waterpolo Turia</td><td>12</td><td>8</td><td>4</td><td>122</td><td>111</td><td>11</td><td>23</td></tr>
+                                    <tr><td>3</td><td>C.D. Waterpolo Navarra</td><td>12</td><td>6</td><td>4</td><td>108</td><td>102</td><td>6</td><td>20</td></tr>
+                                    <tr><td>4</td><td>C.N. Caballa-Ciudad de Ceuta</td><td>12</td><td>5</td><td>4</td><td>128</td><td>130</td><td>-2</td><td>18</td></tr>
+                                    <tr><td>5</td><td>C. Waterpolo Sevilla</td><td>12</td><td>5</td><td>5</td><td>140</td><td>134</td><td>6</td><td>16</td></tr>
+                                    <tr><td>6</td><td>C.N. Granollers</td><td>12</td><td>5</td><td>7</td><td>88</td><td>108</td><td>-20</td><td>13</td></tr>
+                                    <tr><td>7</td><td>A.R. Concepción Ciudad Lineal</td><td>12</td><td>3</td><td>9</td><td>98</td><td>142</td><td>-44</td><td>8</td></tr>
+                                </tbody>
+                            </table>
+                            <p class="nota-fuente">Equipos F1 · Grupo A (23/24).</p>
+                        </div>
+
+                        <!-- GRUPO B -->
+                        <div class="subtab-panel" data-sub="f1-b">
+                            <h4>Fase 1 · Grupo B</h4>
+                            <table class="tabla-clasificacion">
+                                <thead>
+                                    <tr>
+                                        <th>Posición</th>
+                                        <th>Equipo</th>
+                                        <th>J</th>
+                                        <th>G</th>
+                                        <th>P</th>
+                                        <th>GF</th>
+                                        <th>GC</th>
+                                        <th>DG</th>
+                                        <th>Puntos</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>1</td><td>C.N. MONTJUIC</td><td>12</td><td>9</td><td>3</td><td>137</td><td>119</td><td>18</td><td>28</td></tr>
+                                    <tr><td>2</td><td>C.N. HELIOS</td><td>12</td><td>8</td><td>4</td><td>118</td><td>110</td><td>8</td><td>23</td></tr>
+                                    <tr><td>3</td><td>C.N. PREMIA</td><td>12</td><td>6</td><td>6</td><td>122</td><td>117</td><td>5</td><td>18</td></tr>
+                                    <tr><td>4</td><td>C.N. MOLINS DE REI SINTAGMIA</td><td>12</td><td>7</td><td>5</td><td>131</td><td>129</td><td>2</td><td>18</td></tr>
+                                    <tr><td>5</td><td>C. ASKARTZA</td><td>12</td><td>5</td><td>7</td><td>147</td><td>155</td><td>-8</td><td>17</td></tr>
+                                    <tr><td>6</td><td>TENERIFE ECHEYDE TIMBEQUE</td><td>12</td><td>4</td><td>8</td><td>131</td><td>143</td><td>-12</td><td>12</td></tr>
+                                    <tr><td>7</td><td>C.N. LA LATINA IARA</td><td>12</td><td>3</td><td>9</td><td>119</td><td>132</td><td>-13</td><td>10</td></tr>
+
+                                </tbody>
+                            </table>
+                            <p class="nota-fuente">Equipos F1 · Grupo B (23/24).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== Contenido FASE 2 ===== -->
+                <div class="fase-content" data-fase="2">
+                    <div class="subtabs">
+                        <input type="radio" name="sub-masc-f2" id="f2-titulo" checked>
+                        <label for="f2-titulo">Grupo C · Título</label>
+                        <input type="radio" name="sub-masc-f2" id="f2-perma">
+                        <label for="f2-perma">Grupo D · Permanencia</label>
+
+                        <!-- GRUPO C (Título) -->
+                        <div class="subtab-panel" data-sub="f2-titulo">
+                            <h4>Fase 2 · Grupo C (Título)</h4>
+                            <table class="tabla-clasificacion">
+                                <thead>
+                                    <tr>
+                                        <th>Posición</th>
+                                        <th>Equipo</th>
+                                        <th>J</th>
+                                        <th>G</th>
+                                        <th>P</th>
+                                        <th>GF</th>
+                                        <th>GC</th>
+                                        <th>DG</th>
+                                        <th>Puntos</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>1</td><td>C.N. MONTJUIC</td><td>14</td><td>10</td><td>4</td><td>162</td><td>133</td><td>29</td><td>31</td></tr>
+                                    <tr><td>2</td><td>U.E. HORTA-HAXELIA</td><td>14</td><td>10</td><td>4</td><td>156</td><td>139</td><td>17</td><td>29</td></tr>
+                                    <tr><td>3</td><td>C.N. HELIOS</td><td>14</td><td>8</td><td>6</td><td>140</td><td>134</td><td>6</td><td>25</td></tr>
+                                    <tr><td>4</td><td>C.N. CABALLA - CIUDAD DE CEUTA</td><td>14</td><td>7</td><td>7</td><td>146</td><td>144</td><td>2</td><td>23</td></tr>
+                                    <tr><td>5</td><td>C.N. MOLINS DE REI SINTAGMIA</td><td>14</td><td>6</td><td>8</td><td>134</td><td>142</td><td>-8</td><td>18</td></tr>
+                                    <tr><td>6</td><td>C.D. WATERPOLO TURIA</td><td>14</td><td>6</td><td>8</td><td>143</td><td>146</td><td>-3</td><td>17</td></tr>
+                                    <tr><td>7</td><td>C.N. PREMIA</td><td>14</td><td>5</td><td>9</td><td>138</td><td>153</td><td>-15</td><td>14</td></tr>
+                                    <tr><td>8</td><td>C.D. WATERPOLO NAVARRA</td><td>14</td><td>4</td><td>10</td><td>118</td><td>146</td><td>-28</td><td>11</td></tr>
+
+                                </tbody>
+                            </table>
+                            <p class="nota-fuente">Equipos F2 · Grupo C (Título) 23/24.</p>
+                        </div>
+
+                        <!-- GRUPO D (Permanencia) -->
+                        <div class="subtab-panel" data-sub="f2-perma">
+                            <h4>Fase 2 · Grupo D (Permanencia)</h4>
+                            <table class="tabla-clasificacion">
+                                <thead>
+                                    <tr>
+                                        <th>Posición</th>
+                                        <th>Equipo</th>
+                                        <th>J</th>
+                                        <th>G</th>
+                                        <th>P</th>
+                                        <th>GF</th>
+                                        <th>GC</th>
+                                        <th>DG</th>
+                                        <th>Puntos</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>1</td><td>C.N. GRANOLLERS</td><td>10</td><td>6</td><td>4</td><td>92</td><td>94</td><td>-2</td><td>18</td></tr>
+                                    <tr><td>2</td><td>C. WATERPOLO SEVILLA</td><td>10</td><td>5</td><td>5</td><td>129</td><td>102</td><td>27</td><td>17</td></tr>
+                                    <tr><td>3</td><td>C. ASKARTZA</td><td>10</td><td>5</td><td>5</td><td>127</td><td>125</td><td>2</td><td>17</td></tr>
+                                    <tr><td>4</td><td>TENERIFE ECHEYDE TIMBEQUE</td><td>10</td><td>6</td><td>4</td><td>117</td><td>124</td><td>-7</td><td>15</td></tr>
+                                    <tr><td>5</td><td>C.N. LA LATINA IARA</td><td>10</td><td>5</td><td>5</td><td>105</td><td>106</td><td>-1</td><td>15</td></tr>
+                                    <tr><td>6</td><td>A.R. CONCEPCION CIUDAD LINEAL</td><td>10</td><td>3</td><td>7</td><td>99</td><td>118</td><td>-19</td><td>8</td></tr>
+
+                                </tbody>
+                            </table>
+                            <p class="nota-fuente">Equipos F2 · Grupo D (Permanencia) 23/24.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+                <!-- ===================== -->
+                <!-- Sección: Primera Nacional Femenina (23/24) -->
+                <!-- ===================== -->
+        <section id="primera-nacional-femenina">
+            <h3>Primera Nacional Femenina (2023-24)
+                <small>Formato: Fase 1 (Grupos A/B) → Fase 2 (Título/Permanencia)</small>
+            </h3>
+
+            <div class="tabs-fase">
+                <!-- ===== Tabs de Fase ===== -->
+                <input type="radio" name="fase-fem" id="fase1-fem" checked>
+                <label for="fase1-fem">Fase 1</label>
+
+                <input type="radio" name="fase-fem" id="fase2-fem">
+                <label for="fase2-fem">Fase 2</label>
+
+                <!-- ===== Contenido FASE 1 ===== -->
+                <div class="fase-content" data-fase="1">
+                    <div class="subtabs">
+                        <input type="radio" name="sub-fem-f1" id="f1a-fem" checked>
+                        <label for="f1a-fem">Grupo A</label>
+
+                        <input type="radio" name="sub-fem-f1" id="f1b-fem">
+                        <label for="f1b-fem">Grupo B</label>
+
+                        <!-- FASE 1 · GRUPO A -->
+                        <div class="subtab-panel" data-sub="f1a-fem">
+                            <h4>Fase 1 · Grupo A</h4>
+                            <table class="tabla-clasificacion">
+                                <thead>
+                                    <tr>
+                                        <th>Posición</th>
+                                        <th>Equipo</th>
+                                        <th>PJ</th>
+                                        <th>PG</th>
+                                        <th>PP</th>
+                                        <th>GF</th>
+                                        <th>GC</th>
+                                        <th>DG</th>
+                                        <th>Puntos</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>1</td><td>U.E. HORTA-HAXELIA</td><td>14</td><td>11</td><td>3</td><td>207</td><td>149</td><td>58</td><td>34</td></tr>
+                                    <tr><td>2</td><td>C.N. CUATRO CAMINOS</td><td>14</td><td>11</td><td>3</td><td>185</td><td>135</td><td>50</td><td>33</td></tr>
+                                    <tr><td>3</td><td>COLEGIO BRAINS</td><td>14</td><td>11</td><td>3</td><td>172</td><td>129</td><td>43</td><td>32</td></tr>
+                                    <tr><td>4</td><td>A.R. CONCEPCION CIUDAD LINEAL</td><td>14</td><td>8</td><td>6</td><td>160</td><td>147</td><td>13</td><td>23</td></tr>
+                                    <tr><td>5</td><td>C.N. CIUDAD DE ALCORCON</td><td>14</td><td>7</td><td>7</td><td>154</td><td>149</td><td>5</td><td>22</td></tr>
+                                    <tr><td>6</td><td>C.N. MONTJUIC</td><td>14</td><td>4</td><td>10</td><td>151</td><td>175</td><td>-24</td><td>12</td></tr>
+                                    <tr><td>7</td><td>LEIOA WLB</td><td>14</td><td>2</td><td>12</td><td>140</td><td>190</td><td>-50</td><td>7</td></tr>
+                                    <tr><td>8</td><td>ESC. WAT. ZARAGOZA</td><td>14</td><td>2</td><td>12</td><td>104</td><td>199</td><td>-95</td><td>5</td></tr>
+                                </tbody>
+                            </table>
+                            <p class="nota-fuente">Clasificación F1 · Grupo A (23/24).</p>
+                        </div>
+
+                        <!-- FASE 1 · GRUPO B -->
+                        <div class="subtab-panel" data-sub="f1b-fem">
+                            <h4>Fase 1 · Grupo B</h4>
+                            <table class="tabla-clasificacion">
+                                <thead>
+                                    <tr>
+                                        <th>Posición</th>
+                                        <th>Equipo</th>
+                                        <th>PJ</th>
+                                        <th>PG</th>
+                                        <th>PP</th>
+                                        <th>GF</th>
+                                        <th>GC</th>
+                                        <th>DG</th>
+                                        <th>Puntos</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                <tr><td>1</td><td>C.D. WATERPOLO IRUÑA 98 02</td><td>14</td><td>13</td><td>1</td><td>244</td><td>138</td><td>+106</td><td>39</td></tr>
+                                <tr><td>2</td><td>C.N. VALLIRANA</td><td>14</td><td>11</td><td>3</td><td>158</td><td>125</td><td>+33</td><td>32</td></tr>
+                                <tr><td>3</td><td>C.N. MOLINS DE REI SINTAGMIA</td><td>14</td><td>7</td><td>7</td><td>166</td><td>151</td><td>+15</td><td>24</td></tr>
+                                <tr><td>4</td><td>A.E. SANTA EULALIA</td><td>14</td><td>7</td><td>7</td><td>163</td><td>141</td><td>+22</td><td>23</td></tr>
+                                <tr><td>5</td><td>C.D. WATERPOLO TURIA</td><td>14</td><td>6</td><td>8</td><td>164</td><td>202</td><td>-38</td><td>17</td></tr>
+                                <tr><td>6</td><td>CLUB WATERPOLO ELX</td><td>14</td><td>5</td><td>9</td><td>148</td><td>170</td><td>-22</td><td>15</td></tr>
+                                <tr><td>7</td><td>CW PONTEVEDRA</td><td>14</td><td>4</td><td>10</td><td>119</td><td>177</td><td>-58</td><td>10</td></tr>
+                                <tr><td>8</td><td>C.W. DOS HERMANAS PQS</td><td>14</td><td>3</td><td>11</td><td>159</td><td>217</td><td>-58</td><td>8</td></tr>
+                                </tbody>
+                            </table>
+                            <p class="nota-fuente">Clasificación F1 · Grupo B (23/24).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== Contenido FASE 2 ===== -->
+                <div class="fase-content" data-fase="2">
+                    <div class="subtabs">
+                        <input type="radio" name="sub-fem-f2" id="f2titulo-fem" checked>
+                        <label for="f2titulo-fem">Grupo C · Título</label>
+
+                        <input type="radio" name="sub-fem-f2" id="f2perma-fem">
+                        <label for="f2perma-fem">Grupo D · Permanencia</label>
+
+                        <!-- FASE 2 · GRUPO C (TÍTULO) -->
+                        <div class="subtab-panel" data-sub="f2titulo-fem">
+                            <h4>Fase 2 · Grupo C (Título)</h4>
+                            <table class="tabla-clasificacion">
+                                <thead>
+                                    <tr>
+                                        <th>Posición</th>
+                                        <th>Equipo</th>
+                                        <th>PJ</th>
+                                        <th>PG</th>
+                                        <th>PP</th>
+                                        <th>GF</th>
+                                        <th>GC</th>
+                                        <th>DG</th>
+                                        <th>Puntos</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>1</td><td>C.D. WATERPOLO IRUÑA 98 02</td><td>14</td><td>11</td><td>3</td><td>200</td><td>154</td><td>+46</td><td>33</td></tr>
+                                    <tr><td>2</td><td>U.E. HORTA-HAXELIA</td><td>14</td><td>10</td><td>4</td><td>167</td><td>149</td><td>+18</td><td>31</td></tr>
+                                    <tr><td>3</td><td>COLEGIO BRAINS</td><td>14</td><td>10</td><td>4</td><td>179</td><td>165</td><td>+14</td><td>30</td></tr>
+                                    <tr><td>4</td><td>C.N. CUATRO CAMINOS</td><td>14</td><td>8</td><td>6</td><td>164</td><td>146</td><td>+18</td><td>25</td></tr>
+                                    <tr><td>5</td><td>C.N. VALLIRANA</td><td>14</td><td>6</td><td>8</td><td>137</td><td>155</td><td>-18</td><td>17</td></tr>
+                                    <tr><td>6</td><td>A.R. CONCEPCION CIUDAD LINEAL</td><td>14</td><td>5</td><td>9</td><td>159</td><td>181</td><td>-22</td><td>13</td></tr>
+                                    <tr><td>7</td><td>A.E. SANTA EULALIA</td><td>14</td><td>3</td><td>11</td><td>135</td><td>159</td><td>-24</td><td>10</td></tr>
+                                    <tr><td>8</td><td>C.N. MOLINS DE REI SINTAGMIA</td><td>14</td><td>3</td><td>11</td><td>139</td><td>171</td><td>-32</td><td>9</td></tr>
+                                </tbody>
+                            </table>
+                            <p class="nota-fuente">Clasificación F2 · Grupo C (Título) 23/24.</p>
+                        </div>
+
+                        <!-- FASE 2 · GRUPO D (PERMANENCIA) -->
+                        <div class="subtab-panel" data-sub="f2perma-fem">
+                            <h4>Fase 2 · Grupo D (Permanencia)</h4>
+                            <table class="tabla-clasificacion">
+                                <thead>
+                                    <tr>
+                                        <th>Posición</th>
+                                        <th>Equipo</th>
+                                        <th>PJ</th>
+                                        <th>PG</th>
+                                        <th>PP</th>
+                                        <th>GF</th>
+                                        <th>GC</th>
+                                        <th>DG</th>
+                                        <th>Puntos</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>1</td><td>C.D. WATERPOLO TURIA</td><td>14</td><td>10</td><td>4</td><td>173</td><td>152</td><td>+21</td><td>30</td></tr>
+                                    <tr><td>2</td><td>CLUB WATERPOLO ELX</td><td>14</td><td>8</td><td>6</td><td>159</td><td>143</td><td>+16</td><td>25</td></tr>
+                                    <tr><td>3</td><td>C.N. CIUDAD DE ALCORCON</td><td>14</td><td>8</td><td>6</td><td>148</td><td>143</td><td>+5</td><td>24</td></tr>
+                                    <tr><td>4</td><td>CW PONTEVEDRA</td><td>14</td><td>8</td><td>6</td><td>147</td><td>142</td><td>+5</td><td>23</td></tr>
+                                    <tr><td>5</td><td>LEIOA WLB</td><td>14</td><td>6</td><td>8</td><td>181</td><td>175</td><td>+6</td><td>20</td></tr>
+                                    <tr><td>6</td><td>C.N. MONTJUIC</td><td>14</td><td>6</td><td>8</td><td>162</td><td>158</td><td>+4</td><td>19</td></tr>
+                                    <tr><td>7</td><td>C.W. DOS HERMANAS PQS</td><td>14</td><td>6</td><td>8</td><td>172</td><td>180</td><td>-8</td><td>17</td></tr>
+                                    <tr><td>8</td><td>ESC. WAT. ZARAGOZA</td><td>14</td><td>4</td><td>10</td><td>110</td><td>159</td><td>-49</td><td>10</td></tr>
+                                </tbody>
+
+
+                            </table>
+                            <p class="nota-fuente">Clasificación F2 · Grupo D (Permanencia) 23/24.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+                <!-- ===================== -->
+                <!-- Sección: Segunda Nacional Masculina (23/24) -->
+                <!-- ===================== -->
+        <section id="segunda-nacional-masculina">
+            <h3>Segunda Nacional Masculina (2023-24)
+                <small>Formato: Fase 1 (Grupos A/B) → Fase 2 (Ascenso/Permanencia)</small>
+            </h3>
+
+            <!-- Tabs de Fase (solo CSS; el CSS te lo paso después) -->
+            <div class="tabs-fase">
+                <!-- Radios Fase -->
+                <input type="radio" name="fase-masc-seg" id="fase1-masc-seg" checked>
+                <label for="fase1-masc-seg">Fase 1</label>
+
+                <input type="radio" name="fase-masc-seg" id="fase2-masc-seg">
+                <label for="fase2-masc-seg">Fase 2</label>
+
+                <!-- ===== Contenido FASE 1 ===== -->
+                <div class="fase-content" data-fase="1">
+                    <div class="subtabs">
+                        <input type="radio" name="sub-masc-f1-seg" id="f1-a-seg" checked>
+                        <label for="f1-a-seg">Grupo A</label>
+                        <input type="radio" name="sub-masc-f1-seg" id="f1-b-seg">
+                        <label for="f1-b-seg">Grupo B</label>
+
+                        <!-- GRUPO A -->
+                        <div class="subtab-panel" data-sub="f1-a-seg">
+                            <h4>Fase 1 · Grupo A</h4>
+                            <table class="tabla-clasificacion">
+                                <thead>
+                                    <tr>
+                                        <th>Posición</th>
+                                        <th>Equipo</th>
+                                        <th>J</th>
+                                        <th>G</th>
+                                        <th>P</th>
+                                        <th>GF</th>
+                                        <th>GC</th>
+                                        <th>DG</th>
+                                        <th>Puntos</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    
+                                    <tr><td>1</td><td>C.N. POBLE NOU</td><td>14</td><td>11</td><td>3</td><td>186</td><td>128</td><td>+58</td><td>34</td></tr>
+                                    <tr><td>2</td><td>REAL CANOE N.C.</td><td>14</td><td>10</td><td>4</td><td>170</td><td>153</td><td>+17</td><td>29</td></tr>
+                                    <tr><td>3</td><td>C. ENCINAS DE BOADILLA</td><td>14</td><td>9</td><td>5</td><td>166</td><td>129</td><td>+37</td><td>26</td></tr>
+                                    <tr><td>4</td><td>C.N. LAS PALMAS</td><td>14</td><td>8</td><td>6</td><td>158</td><td>144</td><td>+14</td><td>23</td></tr>
+                                    <tr><td>5</td><td>C.D. WATERPOLO MÁLAGA</td><td>14</td><td>6</td><td>8</td><td>136</td><td>144</td><td>-8</td><td>19</td></tr>
+                                    <tr><td>6</td><td>COLEGIO BRAINS</td><td>14</td><td>6</td><td>8</td><td>130</td><td>179</td><td>-49</td><td>15</td></tr>
+                                    <tr><td>7</td><td>C.W. DOS HERMANAS PQS</td><td>14</td><td>4</td><td>10</td><td>150</td><td>175</td><td>-25</td><td>14</td></tr>
+                                    <tr><td>8</td><td>C.N. TRES CANTOS</td><td>14</td><td>2</td><td>12</td><td>143</td><td>187</td><td>-44</td><td>8</td></tr>
+                                    
+
+                                </tbody>
+                            </table>
+                            <p class="nota-fuente">Equipos F1 · Grupo A (23/24).</p>
+                        </div>
+
+                        <!-- GRUPO B -->
+                        <div class="subtab-panel" data-sub="f1-b-seg">
+                            <h4>Fase 1 · Grupo B</h4>
+                            <table class="tabla-clasificacion">
+                                <thead>
+                                    <tr>
+                                        <th>Posición</th>
+                                        <th>Equipo</th>
+                                        <th>J</th>
+                                        <th>G</th>
+                                        <th>P</th>
+                                        <th>GF</th>
+                                        <th>GC</th>
+                                        <th>DG</th>
+                                        <th>Puntos</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tbody>
+                                        <tr><td>1</td><td>C.N. BADIA</td><td>14</td><td>13</td><td>1</td><td>207</td><td>115</td><td>+92</td><td>40</td></tr>
+                                        <tr><td>2</td><td>C.N. CIUTAT DE PALMA</td><td>14</td><td>10</td><td>4</td><td>206</td><td>175</td><td>+31</td><td>30</td></tr>
+                                        <tr><td>3</td><td>CLUB NOU GODELLA NATACIÓN</td><td>14</td><td>8</td><td>6</td><td>167</td><td>168</td><td>-1</td><td>24</td></tr>
+                                        <tr><td>4</td><td>C.N. VALLIRANA</td><td>14</td><td>7</td><td>7</td><td>169</td><td>165</td><td>+4</td><td>21</td></tr>
+                                        <tr><td>5</td><td>C.N. CIUDAD DE ALCORCON</td><td>14</td><td>6</td><td>8</td><td>165</td><td>181</td><td>-16</td><td>16</td></tr>
+                                        <tr><td>6</td><td>URBAT IKE</td><td>14</td><td>4</td><td>10</td><td>151</td><td>167</td><td>-16</td><td>13</td></tr>
+                                        <tr><td>7</td><td>CLUB WATERPOLO ELX</td><td>14</td><td>4</td><td>10</td><td>177</td><td>183</td><td>-6</td><td>12</td></tr>
+                                        <tr><td>8</td><td>CLUB DEPORTIVO WATERPOLO CHICLANA</td><td>14</td><td>4</td><td>10</td><td>142</td><td>230</td><td>-88</td><td>12</td></tr>
+                                    </tbody>
+
+                                </tbody>
+                            </table>
+                            <p class="nota-fuente">Equipos F1 · Grupo B (23/24).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== Contenido FASE 2 ===== -->
+                <div class="fase-content" data-fase="2">
+                    <div class="subtabs">
+                        <input type="radio" name="sub-masc-f2-seg" id="f2-titulo-seg" checked>
+                        <label for="f2-titulo-seg">Grupo C · Título</label>
+                        <input type="radio" name="sub-masc-f2-seg" id="f2-perma-seg">
+                        <label for="f2-perma-seg">Grupo D · Permanencia</label>
+
+                        <!-- GRUPO C (Título) -->
+                        <div class="subtab-panel" data-sub="f2-titulo-seg">
+                            <h4>Fase 2 · Grupo C (Ascenso)</h4>
+                            <table class="tabla-clasificacion">
+                                <thead>
+                                    <tr>
+                                        <th>Posición</th>
+                                        <th>Equipo</th>
+                                        <th>J</th>
+                                        <th>G</th>
+                                        <th>P</th>
+                                        <th>GF</th>
+                                        <th>GC</th>
+                                        <th>DG</th>
+                                        <th>Puntos</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tbody>
+                                        <tr><td>1</td><td>C.N. POBLE NOU</td><td>14</td><td>10</td><td>4</td><td>152</td><td>118</td><td>+34</td><td>31</td></tr>
+                                        <tr><td>2</td><td>C. ENCINAS DE BOADILLA</td><td>14</td><td>10</td><td>4</td><td>164</td><td>135</td><td>+29</td><td>29</td></tr>
+                                        <tr><td>3</td><td>C.N. BADIA</td><td>14</td><td>9</td><td>5</td><td>157</td><td>125</td><td>+32</td><td>27</td></tr>
+                                        <tr><td>4</td><td>C.N. LAS PALMAS</td><td>14</td><td>9</td><td>5</td><td>168</td><td>151</td><td>+17</td><td>27</td></tr>
+                                        <tr><td>5</td><td>REAL CANOE N.C.</td><td>14</td><td>9</td><td>5</td><td>173</td><td>140</td><td>+33</td><td>27</td></tr>
+                                        <tr><td>6</td><td>C.N. CIUTAT DE PALMA</td><td>14</td><td>6</td><td>8</td><td>145</td><td>174</td><td>-29</td><td>18</td></tr>
+                                        <tr><td>7</td><td>CLUB NOU GODELLA NATACIÓN</td><td>14</td><td>3</td><td>11</td><td>127</td><td>174</td><td>-47</td><td>8</td></tr>
+                                        <tr><td>8</td><td>C.N. VALLIRANA</td><td>14</td><td>0</td><td>14</td><td>123</td><td>192</td><td>-69</td><td>1</td></tr>
+                                    </tbody>
+
+                                </tbody>
+                            </table>
+                            <p class="nota-fuente">Equipos F2 · Grupo C (Ascenso) 23/24.</p>
+                        </div>
+
+                        <!-- GRUPO D (Permanencia) -->
+                        <div class="subtab-panel" data-sub="f2-perma-seg">
+                            <h4>Fase 2 · Grupo D (Permanencia)</h4>
+                            <table class="tabla-clasificacion">
+                                <thead>
+                                    <tr>
+                                        <th>Posición</th>
+                                        <th>Equipo</th>
+                                        <th>J</th>
+                                        <th>G</th>
+                                        <th>P</th>
+                                        <th>GF</th>
+                                        <th>GC</th>
+                                        <th>DG</th>
+                                        <th>Puntos</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tbody>
+                                        <tr><td>1</td><td>C.D. WATERPOLO MÁLAGA</td><td>14</td><td>9</td><td>4</td><td>182</td><td>138</td><td>+44</td><td>28</td></tr>
+                                        <tr><td>2</td><td>COLEGIO BRAINS</td><td>14</td><td>10</td><td>4</td><td>152</td><td>146</td><td>+6</td><td>27</td></tr>
+                                        <tr><td>3</td><td>C.W. DOS HERMANAS PQS</td><td>14</td><td>8</td><td>6</td><td>183</td><td>160</td><td>+23</td><td>24</td></tr>
+                                        <tr><td>4</td><td>C.N. TRES CANTOS</td><td>14</td><td>7</td><td>7</td><td>161</td><td>155</td><td>+6</td><td>23</td></tr>
+                                        <tr><td>5</td><td>URBAT IKE</td><td>14</td><td>8</td><td>6</td><td>179</td><td>171</td><td>+8</td><td>23</td></tr>
+                                        <tr><td>6</td><td>CLUB DEPORTIVO WATERPOLO CHICLANA</td><td>14</td><td>6</td><td>8</td><td>146</td><td>208</td><td>-62</td><td>18</td></tr>
+                                        <tr><td>7</td><td>C.N. CIUDAD DE ALCORCÓN</td><td>14</td><td>4</td><td>9</td><td>141</td><td>161</td><td>-20</td><td>12</td></tr>
+                                        <tr><td>8</td><td>CLUB WATERPOLO ELX</td><td>14</td><td>3</td><td>11</td><td>148</td><td>153</td><td>-5</td><td>10</td></tr>
+                                    </tbody>
+
+                                </tbody>
+                            </table>
+                            <p class="nota-fuente">Equipos F2 · Grupo D (Permanencia) 23/24.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Proyecto de Ingeniería Web - Iñigo Salazar</p>
+    </footer>
+</body>
+</html>
